@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    width: 25%;
+}
+
+header .logo img{
+    width: 40px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+ 
+nav ul {
+    list-style-type: none;
+    display: flex;
+
+}
+nav ul li{
+    position: relative;
+    padding: 15px 30px;
+ 
+
+}
+nav ul li a{
+    text-decoration:none;
+
+}
+nav ul li:hover{
+    background-color: antiquewhite;
+}
+header nav ul li>ul{
+    background-color: brown;
+    display: none;
+    position: absolute;
+}
+header nav ul li:hover>ul{
+    background-color: azure;
+    display: block;
+}
